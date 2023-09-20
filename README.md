@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# About Jammming
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Jammming is a React app which uses allows users to log into their Spotify account, and search for songs and to create playlists from those songs.
 
-## Available Scripts
+If you want to see the app in action, here is a deployed version of Netlify: https://jammming-spotifyapi.netlify.app/
 
-In the project directory, you can run:
 
-### `npm start`
+## Motivation of the project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I am currently in the process of completing a full-stack development course. Through this project, I attempted to learn the following:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Gain hands-on experience developing a React app from planning, designing, to developing
+* Familiarize myself with React JSX syntax
+* Learn how to set up states using hooks, especially useState()
+* Learn how to pass states using props and use them through components
+* Learn to update states based on user inputs through forms
+* Learn to read and understand API documentations (Spotify API documentation: https://developer.spotify.com/documentation/web-api)
+* Learn to update states with json objects returned from the API calls
+* Learn how to handle API calls, especially GET and POST requests
+* Learn to use an API token without exposing it online
+* Learn to deploy a website using Netlify
 
-### `npm test`
+## How does Jammming work?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Jammming is a React app which uses allows users to log into their Spotify account, and search for songs and to create playlists from those songs.
 
-### `npm run build`
+**Description of Use:**
+1. Search songs by titles, albums, or artists in the input section.
+2. If you are not logged into your Spotify account, you will be directed to a Spotify log-in page. Log into Spotify.
+3. After logging in, you will be redirected back to the Jammming page. Search songs again.
+4. Songs will be shown under "Results". If you have songs that you would like to add to your playlist, click on plus icons. The added songs will be displayed in the panel named "My Playlist".
+5. If you change your mind and want to remove certain songs, click on the minus buttons.
+6. You can change the default playlist name, "My Playlist", to any names of your choice.
+7. Click on "Save to Spotify" to save your playlist to your Spotify account.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Jammming uses many technologies for it to work:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* React with function components
+* useState() React hook
+* Fetch API with GET and POST requests
+* Spotify API
+* Dealing with Restful API and Json data
+* Hiding API token in an environmental variable
+* Deployment with Netlify
 
-### `npm run eject`
+## Special thanks to Codecademy
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project was possible thanks to the guidance provided by Codecademy course.
+Codecademy provided me with detailed step-by-step guidance on how to develop this app.
+Its community forum also provided me with many useful tips and examples of codes to try on for this app.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Issues to be Ironed Out:
+- [ ] API request to log into Spotify on page load, rather than after trying to search.
+- [ ] First search not saving.
+- [ ] When song added to playlist column, it should be removed from the results column
+- [ ] When song removed from results column, it should return to the playlist column.
+- [x] Hiding API token in an environmental variable
