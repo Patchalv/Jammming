@@ -1,4 +1,5 @@
 # About Jammming
+![jammming](https://github.com/Patchalv/Jammming/assets/35778404/49fe2953-8dd5-47ca-ae23-383367b228be)
 
 Jammming is a React app which uses allows users to log into their Spotify account, and search for songs and to create playlists from those songs.
 
