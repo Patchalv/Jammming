@@ -2,7 +2,7 @@
 
 Jammming is a React app which uses allows users to log into their Spotify account, and search for songs and to create playlists from those songs.
 
-If you want to see the app in action, here is a deployed version of Netlify: https://jammming-spotifyapi.netlify.app/
+If you want to see the app in action, here is a deployed version of Netlify: https://jammming-v3.netlify.app/
 
 
 ## Motivation of the project
